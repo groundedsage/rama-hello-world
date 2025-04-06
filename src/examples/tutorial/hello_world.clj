@@ -1,4 +1,5 @@
 (ns examples.tutorial.hello-world 
+  "https://redplanetlabs.com/docs/~/tutorial1.html#_running_a_module_on_a_cluster"
   (:use [com.rpl.rama])
   (:require [com.rpl.rama.test :as rtest]
             [com.rpl.rama.ops :as ops]))
