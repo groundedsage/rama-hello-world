@@ -1,6 +1,8 @@
 {:paths ["src"]
- :deps {org.clojure/clojure                         {:mvn/version "1.11.1"}
-        com.hyperfiddle/rcf                         {:mvn/version "20220926-202227"}
-        com.rpl/rama                                {:mvn/version "0.10.0" #_"1.0.0"}
-        com.rpl/rama-helpers                        {:mvn/version "0.9.1" #_"0.10.0"}}
+ :deps {com.hyperfiddle/rcf                         {:mvn/version "20220926-202227"}
+        com.rpl/rama                                {:mvn/version #_"0.10.0" "1.0.0"}
+        com.rpl/rama-helpers                        {:mvn/version #_"0.9.1" "0.10.0"}
+        ;; Added dependencies to align with rama-demo-gallery
+        #_#_org.apache.logging.log4j/log4j-slf4j18-impl {:mvn/version "2.16.0"}
+       #_#_ org.asynchttpclient/async-http-client       {:mvn/version "2.12.3"}}
  :mvn/repos {"releases" {:url "https://nexus.redplanetlabs.com/repository/maven-public-releases"}}}
