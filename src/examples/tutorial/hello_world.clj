@@ -13,11 +13,11 @@
                (println *data))))
 
 (comment
-  (def ipc (rtest/create-ipc)) 
-  (rtest/launch-module! ipc HelloWorldModule {:tasks 1 :threads 1}) 
-  (def module-name (get-module-name HelloWorldModule)) 
-  (def depot (foreign-depot ipc module-name "*depot")) 
-  (foreign-append! depot "Hello, world!!")
+  
+  (with-open [ipc (rtest/create-ipc)]
+    (rtest/launch-module! ipc HelloWorldModule {:tasks 1 :threads 1})
+    (let [module-name (get-module-name HelloWorldModule)
+          depot (foreign-depot ipc module-name "*depot")]
+      (foreign-append! depot "Hello, world!!")))
+
   )
-
-
