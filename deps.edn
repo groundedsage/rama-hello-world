@@ -1,0 +1,6 @@
+{:paths ["src"]
+ :deps {org.clojure/clojure                         {:mvn/version "1.11.1"}
+        com.hyperfiddle/rcf                         {:mvn/version "20220926-202227"}
+        com.rpl/rama                                {:mvn/version "0.10.0" #_"1.0.0"}
+        com.rpl/rama-helpers                        {:mvn/version "0.9.1" #_"0.10.0"}}
+ :mvn/repos {"releases" {:url "https://nexus.redplanetlabs.com/repository/maven-public-releases"}}}
